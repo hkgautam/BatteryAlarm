@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.admin.batteryalarm.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/charging"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/gifImageView" />
+
+    <TextView
+        android:id="@+id/tvlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gifImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvlevel"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvalarm"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvlevel"
+        android:layout_marginTop="60dp"
+        android:id="@+id/butalarm"
+        android:text="change alarm"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:background="#212F3C"/>
+
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/gifImageView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
